@@ -27,7 +27,7 @@ python app.py -r 10000 -t food
 This will use radarsearch endpoint to search the google places api for up to 200 places in the set type of food, then makes them into a unique list and uses the details endpoint to get the information for open and close times from the google's place api,sums the total open hours for each place and saves them into a `mongodb` database running on bitnami+google compute instances. Each type makes it's own collection, which could exported to csv using the following:
 
 ```
-mongoexport --host 146.148.61.119 --authenticationDatabase admin --username root --password 67yX8Fuw --collection food --csv --fields place_id,name,type,lat,lng,week_total_open --db place_db --out placedb_food.csv
+mongoexport --host 146.148.61.119 --authenticationDatabase admin --username <user> --password <passwrod> --collection food --csv --fields place_id,name,type,lat,lng,week_total_open --db place_db --out placedb_food.csv
 ```
 
 
