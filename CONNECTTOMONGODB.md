@@ -1,0 +1,1 @@
+mongo admin --username root --password 67yX8Fuw
